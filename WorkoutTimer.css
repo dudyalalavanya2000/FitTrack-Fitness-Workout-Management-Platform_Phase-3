@@ -1,0 +1,517 @@
+
+.workout-timer-page {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 30px;
+}
+
+.timer-page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.timer-eyebrow {
+  display: inline-block;
+  color: #7655d9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  margin-bottom: 8px;
+}
+
+.timer-page-heading h1 {
+  color: #202438;
+  font-size: 29px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.timer-page-heading p,
+.timer-section-heading p {
+  color: #85899b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.timer-heading-icon,
+.timer-section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee9ff;
+  color: #7655d9;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
+.timer-heading-icon {
+  width: 55px;
+  height: 55px;
+}
+
+.timer-setup-card,
+.live-workout-card,
+.workout-history-card {
+  background: #fff;
+  border: 1px solid #ececf3;
+  border-radius: 17px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(32, 36, 56, 0.035);
+}
+
+.timer-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.timer-section-icon {
+  width: 43px;
+  height: 43px;
+}
+
+.timer-section-heading h2,
+.live-workout-top h2 {
+  color: #25283c;
+  font-size: 18px;
+  font-weight: 750;
+  margin-bottom: 5px;
+}
+
+.timer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-top: 25px;
+}
+
+.timer-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.timer-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.timer-form-group label {
+  color: #44485b;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.timer-form-group input,
+.timer-form-group select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #e3e4ed;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #303448;
+  font-family: inherit;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.timer-form-group input:focus,
+.timer-form-group select:focus {
+  border-color: #8768e4;
+  box-shadow: 0 0 0 3px rgba(118, 85, 217, 0.1);
+}
+
+.timer-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  border: none;
+  border-radius: 9px;
+  padding: 0 20px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.timer-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.timer-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.start-button {
+  align-self: flex-start;
+  min-width: 165px;
+  background: #7655d9;
+}
+
+.live-workout-card {
+  background: linear-gradient(135deg, #fff 0%, #faf8ff 100%);
+}
+
+.live-workout-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.live-workout-top h2 {
+  font-size: 21px;
+}
+
+.session-activity {
+  color: #85899b;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.session-status,
+.history-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 750;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.status-running {
+  color: #14834d;
+  background: #e6f8ee;
+}
+
+.status-paused {
+  color: #b77812;
+  background: #fff3d8;
+}
+
+.status-completed {
+  color: #6750b8;
+  background: #eee9ff;
+}
+
+.timer-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #7655d9;
+  margin-top: 27px;
+}
+
+.timer-display span {
+  font-size: clamp(37px, 7vw, 58px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-caption {
+  color: #85899b;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.timer-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 27px;
+}
+
+.timer-stat {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px;
+  border: 1px solid #eeeef4;
+  border-radius: 12px;
+  background: #fff;
+  min-width: 0;
+}
+
+.timer-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  flex-shrink: 0;
+}
+
+.calorie-icon {
+  color: #e17b38;
+  background: #fff0e5;
+}
+
+.activity-icon {
+  color: #7655d9;
+  background: #eee9ff;
+}
+
+.timer-stat strong {
+  display: block;
+  color: #292d41;
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: capitalize;
+  overflow-wrap: anywhere;
+}
+
+.timer-stat span {
+  display: block;
+  color: #8a8d9c;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 25px;
+}
+
+.pause-button {
+  background: #d99528;
+}
+
+.resume-button {
+  background: #218b5b;
+}
+
+.stop-button {
+  background: #e34d5c;
+}
+
+.completed-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  color: #218b5b;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.history-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.history-icon {
+  color: #218b80;
+  background: #e5f7f4;
+}
+
+.refresh-history-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #f4f1ff;
+  color: #7655d9;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 13px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.refresh-history-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.history-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 45px 15px;
+  color: #9699a8;
+  text-align: center;
+}
+
+.history-empty h3 {
+  color: #414559;
+  font-size: 15px;
+}
+
+.history-empty p {
+  font-size: 12px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: #f0edff;
+  color: #7655d9;
+}
+
+.history-item-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-item-details h3 {
+  color: #34384b;
+  font-size: 13px;
+  font-weight: 750;
+  margin-bottom: 5px;
+}
+
+.history-item-details p {
+  color: #9295a3;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.history-item-stats {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.history-item-stats strong {
+  display: block;
+  color: #34384b;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.history-item-stats span {
+  display: block;
+  color: #9295a3;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.timer-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 250px;
+  color: #777b8d;
+  font-size: 13px;
+}
+
+.timer-spinner {
+  animation: timer-spin 1s linear infinite;
+}
+
+@keyframes timer-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .timer-page-heading h1 {
+    font-size: 24px;
+  }
+
+  .timer-setup-card,
+  .live-workout-card,
+  .workout-history-card {
+    padding: 18px;
+  }
+
+  .timer-form-row,
+  .timer-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-item {
+    flex-wrap: wrap;
+  }
+
+  .history-item-details {
+    flex-basis: calc(100% - 60px);
+  }
+
+  .history-item-stats {
+    margin-left: 55px;
+    text-align: left;
+  }
+
+  .history-status {
+    margin-left: auto;
+  }
+
+  .timer-controls {
+    flex-wrap: wrap;
+  }
+
+  .timer-controls .timer-button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 430px) {
+  .history-heading {
+    align-items: flex-start;
+  }
+
+  .refresh-history-button {
+    padding: 9px;
+  }
+
+  .timer-display {
+    gap: 8px;
+  }
+
+  .timer-display span {
+    font-size: 35px;
+  }
+
+  .timer-controls .timer-button {
+    width: 100%;
+  }
+}

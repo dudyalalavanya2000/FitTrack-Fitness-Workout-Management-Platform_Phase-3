@@ -1,0 +1,451 @@
+
+.water-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 30px;
+}
+
+.water-header,
+.water-progress-top,
+.water-form-heading,
+.water-goal-heading,
+.water-history-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.water-eyebrow,
+.water-card-label {
+  color: #7655d9;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.water-header h1 {
+  margin: 8px 0;
+  color: #202438;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.water-header p,
+.water-progress-top p,
+.water-form-heading p,
+.water-goal-heading p,
+.water-history-heading p {
+  color: #85899b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.water-add-button,
+.water-submit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: #7655d9;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.water-add-button:hover,
+.water-submit-button:hover {
+  background: #6343c4;
+  transform: translateY(-1px);
+}
+
+.water-add-button:disabled,
+.water-submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+}
+
+.water-date-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  padding: 12px 15px;
+  border: 1px solid #e9e7f2;
+  border-radius: 10px;
+  background: white;
+  color: #7655d9;
+}
+
+.water-date-picker label {
+  color: #55596b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.water-date-picker input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #202438;
+  font: inherit;
+  font-size: 13px;
+}
+
+.water-form-card,
+.water-progress-card,
+.water-goal-card {
+  border: 1px solid #eceaf4;
+  border-radius: 16px;
+  padding: 24px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(40, 35, 75, 0.035);
+}
+
+.water-form-heading {
+  margin-bottom: 22px;
+}
+
+.water-form-heading h2,
+.water-goal-heading h2,
+.water-history-heading h2,
+.water-progress-top h2 {
+  margin-bottom: 5px;
+  color: #25283b;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.water-close-button {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: none;
+  border-radius: 9px;
+  background: #f4f2fa;
+  color: #656176;
+}
+
+.water-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.water-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.water-field label {
+  color: #45485a;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.water-field input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #e5e3ed;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #292c3f;
+  font: inherit;
+  font-size: 13px;
+}
+
+.water-field input:focus {
+  border-color: #9478e7;
+  box-shadow: 0 0 0 3px rgba(118, 85, 217, 0.09);
+}
+
+.water-field small {
+  color: #9699a8;
+  font-size: 11px;
+}
+
+.water-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.water-cancel-button {
+  border: 1px solid #e5e3ed;
+  border-radius: 9px;
+  padding: 11px 17px;
+  background: white;
+  color: #5e6172;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.water-progress-card {
+  background: linear-gradient(120deg, #f5f2ff 0%, #ffffff 75%);
+}
+
+.water-progress-icon,
+.water-goal-icon,
+.water-record-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 12px;
+  background: #eee8ff;
+  color: #7655d9;
+}
+
+.water-progress-icon {
+  width: 52px;
+  height: 52px;
+}
+
+.water-progress-values {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin: 26px 0 20px;
+}
+
+.water-progress-values h3 {
+  color: #292c3f;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.water-progress-values h3 small {
+  color: #85899b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.water-progress-values span {
+  display: block;
+  margin-top: 4px;
+  color: #85899b;
+  font-size: 12px;
+}
+
+.water-progress-track {
+  width: 100%;
+  height: 13px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #e8e3f5;
+}
+
+.water-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7655d9, #a38be9);
+  transition: width 0.4s ease;
+}
+
+.water-progress-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  color: #777b8d;
+  font-size: 12px;
+}
+
+.water-progress-bottom strong {
+  color: #7655d9;
+}
+
+.water-goal-complete {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: #27845b;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.water-goal-heading {
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.water-goal-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.water-goal-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.water-goal-form .water-field {
+  flex: 1;
+  max-width: 350px;
+}
+
+.water-history-heading {
+  margin-top: 4px;
+}
+
+.water-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 220px;
+  padding: 30px;
+  border: 1px dashed #ded9ee;
+  border-radius: 15px;
+  background: white;
+  color: #8b7bb8;
+  text-align: center;
+}
+
+.water-empty-state h3 {
+  color: #37394b;
+  font-size: 16px;
+}
+
+.water-empty-state p {
+  color: #8b8e9d;
+  font-size: 13px;
+}
+
+.water-empty-state .water-add-button {
+  margin-top: 5px;
+}
+
+.water-record-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.water-record-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 17px 19px;
+  border: 1px solid #eeecf4;
+  border-radius: 13px;
+  background: white;
+}
+
+.water-record-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.water-record-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.water-record-info h3 {
+  color: #303346;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.water-record-info span {
+  display: block;
+  margin-top: 5px;
+  color: #9295a3;
+  font-size: 12px;
+}
+
+.water-record-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.water-record-actions button {
+  display: grid;
+  width: 35px;
+  height: 35px;
+  place-items: center;
+  border: none;
+  border-radius: 8px;
+  background: #f3f0fb;
+  color: #7655d9;
+}
+
+.water-record-actions .water-delete-button {
+  background: #fff0f0;
+  color: #dc5555;
+}
+
+@media (max-width: 700px) {
+  .water-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .water-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .water-progress-values {
+    gap: 25px;
+  }
+
+  .water-progress-values h3 {
+    font-size: 24px;
+  }
+
+  .water-goal-form {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .water-goal-form .water-field {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .water-form-card,
+  .water-progress-card,
+  .water-goal-card {
+    padding: 17px;
+  }
+
+  .water-date-picker {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .water-progress-values {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .water-progress-values h3 {
+    font-size: 21px;
+  }
+
+  .water-progress-bottom {
+    flex-direction: column;
+  }
+
+  .water-record-card {
+    padding: 13px;
+  }
+}
